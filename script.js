@@ -19,7 +19,7 @@ function animate () {
     });
 
     $('#image').animate({
-        "border-width": 15,
+        "border-width": 10,
         "border-color": jQuery.Color({ saturation: 1, lightness: 0.5 })
     }, 1000).animate({
         "border-color": jQuery.Color({ hue: 250 })
