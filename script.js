@@ -7,7 +7,7 @@ function animate () {
         fontSize: 64,
         color: jQuery.Color({ saturation: 1, lightness: 0.5 })
     }, 1000).animate({
-        color: jQuery.Color({ hue: 150 })
+        color: jQuery.Color({ blue: 250 })
     }, 1500, function() {
 
         setTimeout(function() {
@@ -22,7 +22,7 @@ function animate () {
         "border-width": 10,
         "border-color": jQuery.Color({ saturation: 1, lightness: 0.5 })
     }, 1000).animate({
-        "border-color": jQuery.Color({ hue: 150 })
+        "border-color": jQuery.Color({ blue: 250 })
     }, 1500, function() {
 
         setTimeout(function() {
