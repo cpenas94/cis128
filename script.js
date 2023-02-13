@@ -7,7 +7,7 @@ function animate () {
         fontSize: 64,
         color: jQuery.Color({ saturation: 1, lightness: 0.5 })
     }, 1000).animate({
-        color: jQuery.Color({ blue: 250 })
+        color: jQuery.Color({ hue: 250 })
     }, 1500, function() {
 
         setTimeout(function() {
@@ -19,10 +19,10 @@ function animate () {
     });
 
     $('#image').animate({
-        "border-width": 10,
+        "border-width": 15,
         "border-color": jQuery.Color({ saturation: 1, lightness: 0.5 })
     }, 1000).animate({
-        "border-color": jQuery.Color({ blue: 250 })
+        "border-color": jQuery.Color({ hue: 250 })
     }, 1500, function() {
 
         setTimeout(function() {
