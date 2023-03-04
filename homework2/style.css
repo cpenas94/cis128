@@ -2,7 +2,7 @@
 		border:0; margin:0; padding:0;
 	}
 		/*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
-		are reset and can now be set to whatever properties that would suit your website best. */
+		are reset and can now be set to whatever properties that would suit your website best.  */
 	
 	body{
 		background:#eaf8fb;	/* a light blue background color. */
