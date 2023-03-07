@@ -125,6 +125,7 @@ div#footer{
 	clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 }	
 
+
 @keyframes spinning {
     from {
         transform:rotate(0deg);
@@ -142,6 +143,8 @@ div#footer{
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+/* Above is the CSS3 Animation */
 
 @media only screen and (max-width: 600px) {
 	div.content{
@@ -161,5 +164,4 @@ div#footer{
 	div#footer {
 		width: auto;
 	}
-
 }
