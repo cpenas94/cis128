@@ -1,8 +1,8 @@
 var map = L.map('map', {
     minZoom: 9,
     maxZoom: 16,
-    zoom: 16,
-    center: [40.423494,-3.682068],
+    zoom: 14,
+    center: [37.536111,-122.336111],
     doubleClickZoom: false,
 }).locate({setView: true});
 
