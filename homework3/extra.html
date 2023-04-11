@@ -12,47 +12,54 @@
 </head>
 
 <body>
-    <h1>Welcome to ABC Toys!</h1>
-    <nav class="navbar navbar-inverse">
+    <h1 class="heading">Welcome to ABC Toys!</h1>
+    <img src="images/index.png" class="img-fluid center" alt="abctoysbanner">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
-            <div class="navbar-header">
+            <div class="navbar-header ">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
             </div>
+
             <nav class="collapse navbar-collapse" id="nav">
-                <img src="images/index.png" class="img-fluid" alt="abctoysbanner">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href="index.html">Home</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href="products.html">Products</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href="location.html">Location</a></li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-left">
                     <li><a href="extra.html">Extra</a></li>
                 </ul>
             </nav>
+
         </div>
     </nav>
 
-    <div>
-        <label>About Us</label>
-    </div>
-    <H2>Making Learning Fun!</H2>
-        <p>ABC toys is a company that opened its doors in 2001 and it has kept its mission for all those years. <br>
-            The mission of our company is to creat toys that are safe for kindergarten kids tht challenge the kids' mind and motor skils making learning a fun task <br>
-            By the way , parent loves our toys too</p>
 
-    
-
-    
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-   
-   
-   
-   
+    <H2 class="heading">WURFL databases</H2>
+        
+    <dl class="deflist">
+        <dt>Capability: "brand_name"</dt>
+        <dd>Description: Provides the brand name of the device that is accessing the application.</dd>
+        <dt>Capability: "Device OS"</dt>
+        <dd>Description: Provides the operating system of the device that is installed on the device.</dd>
+        <dt>Capability: "Device OS Version"</dt>
+        <dd>Description: Indicates the version number of the OS installed on the device.</dd>
+    </dl>
 
 </body>
-
 </html>
