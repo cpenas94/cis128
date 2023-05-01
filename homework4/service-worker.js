@@ -7,8 +7,8 @@ self.addEventListener('install', event => {
         '/index.html',
         '/style.css',
         '/background.js',
-        '/image/lightblue.jpg',
-        '/image/lightgold.jpg'
+        '/images/lightblue.jpg',
+        '/images/lightgold.jpg'
       ]))
   );
 });
