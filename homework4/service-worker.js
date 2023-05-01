@@ -1,15 +1,10 @@
-var cacheName = 'homework4-V1';
+var cacheName = 'pwa-cache';
 var appShellFiles = [
   'index.html',
   'main.css',
   'background.js',
   '/img/lightblue.jpg',
   '/img/lightgold.jpg',
-  '/img/down_arrow_select.jpg',
-  '/fonts/IBM_Plex_Mono/IBMPlexMono-Medium.ttf',
-  '/fonts/PT_Sans/PT_Sans-Web-Regular.ttf',
-  '/fonts/Ubuntu/Ubuntu-Bold.ttf',
-  '/fonts/Ubuntu/Ubuntu-Regular.ttf'
 ];
 
 self.addEventListener('install', function(e) {
