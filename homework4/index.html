@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="theme-color" content="#2979ff">
-  <title>Homework #4 (PWA)</title>
-  <link href="main.css" rel="stylesheet">
+  <title>Progressive Web Applications</title>
+  <link href="style.css" rel="stylesheet">
   <link rel="manifest" href="manifest.json">
   <link rel="preload" href="/imageslightblue.jpg" as="image">
   <link rel="preload" href="/images/lightgold.jpg" as="image">
   <script src="https://code.jquery.com/jquery-3.4.0.slim.min.js"
     integrity="sha256-ZaXnYkHGqIhqTbJ6MB4l9Frs/r7U4jlx7ir8PJYBqbI=" crossorigin="anonymous"></script>
-  <script src="background.js"></script>
+  <script src="script.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
@@ -37,25 +37,18 @@
   <main id="content">
 
     <h4>About PWA's:</h4>
-    <p>Progressive web apps, or <abbr title="Progressive Web Application">PWA's</abbr>, are a major step forward
-      in helping make the modern web environment more progressive, both for developers and users alike.
-      There are a few security advantages in regards to <abbr>PWA's</abbr>, as well as performance enhancements.
+    <p>
+      Progressive Web App (PWA) is a type of web application that uses modern web technologies to provide an app-like experience to users. 
+      PWAs are designed to be reliable, fast, and engaging, and can be accessed through a web browser, without the need to download and install them from an app store.
     </p>
-    <p>When developing a PWA, I reccomend testing it inside of Chrome, as it's
-      <code>chrome://serviceworker-internals</code> page is very useful for detailed information in regards to
-      all service worker state's.
-      Another chrome page that's helpful is <code>chrome://inspect/#service-workers</code>. It allows you to see
-      registered service workers, and inspect them if desired.
-      Not only does it give verbose information, it also allows some control over the service worker thru a
-      register/unregister button and a start/stop button, as well.</p>
-    <p>One of the major advantages gained with PWA's is reliability. No matter the network state of the client,
-      loading is instant because of it's use of service workers.
-      The service worker ensures that all necessary resources are cached inside the client's memory, ready to
-      answer requests whether online or offline!</p>
-    <p>Another advantage gained by developing a PWA is security. In order to qualify as a PWA, your app must use
-      the strictest security standards including HTTPS and HTTP/2.
-      Not only does this secure the server, it also gives customers and clients piece of mind. Studies prove
-      this piece of mind translates into more sales and profits for the site owners.
+    <p>
+      PWAs are built using web technologies such as HTML, CSS and Javascript which can be designed to work offline with data being stored in the browser's cache.
+      They also can be installed on a user's home screen, making them easily accessible, providing an enjoyable user experience.
+    </p>
+    <p>
+      It is designed to be responsive and work across multiple devices and screen sizes.
+      It has a layout that adapts to the screen size and the orientation of the devices.
+      It can also take advantage of device features such as push notifications, camera access, geolocation and providing an engaging user experience.
     </p>
 
       <h4>Background-Image:</h4>
