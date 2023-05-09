@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hybrid Framework Comparison</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js')
+              .then(registration => {
+                console.log('Service worker registered:', registration);
+              })
+              .catch(error => {
+                console.error('Service worker registration failed:', error);
+              });
+          });
+        }
+      </script>
+      
+    <h1>Hybrid Framework Comparison</h1>
+  </header>
+  <main>
+    <section id="phonegap">
+      <h2>PhoneGap (or PhoneGap Build or Cordova)</h2>
+      <p>Advantages:</p>
+      <ul>
+        <li>Easy to learn and use for web developers</li>
+        <li>Can build applications for multiple platforms with a single codebase</li>
+        <li>Good community support</li>
+        <li>Access to native device features using plugins</li>
+      </ul>
+      <p>Disadvantages:</p>
+      <ul>
+        <li>Performance is not as good as native applications</li>
+        <li>Limited control over the native elements of the application</li>
+        <li>Debugging can be challenging</li>
+      </ul>
+    </section>
+    <section id="flutter">
+      <h2>Flutter</h2>
+      <p>Advantages:</p>
+      <ul>
+        <li>Fast development cycles</li>
+        <li>High-performance applications</li>
+        <li>Hot reload for quick development and testing</li>
+        <li>Customizable widgets for building visually appealing UI</li>
+        <li>Access to native device features using plugins</li>
+      </ul>
+      <p>Disadvantages:</p>
+      <ul>
+        <li>Limited community support compared to other frameworks</li>
+        <li>Steep learning curve for developers new to the Dart language</li>
+        <li>Limited third-party library support</li>
+      </ul>
+    </section>
+    <section id="react-native">
+      <h2>React Native</h2>
+      <p>Advantages:</p>
+      <ul>
+        <li>Large and active community support</li>
+        <li>Fast development cycles</li>
+        <li>Good performance compared to other hybrid frameworks</li>
+        <li>Access to native device features using plugins</li>
+      </ul>
+      <p>Disadvantages:</p>
+      <ul>
+        <li>Limited control over native elements of the application</li>
+        <li>Limited third-party library support compared to other frameworks</li>
+        <li>Debugging can be challenging</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>References:</p>
+    <ul>
+      <li>PhoneGap Documentation</li>
+      <li>Flutter Documentation</li>
+      <li>React Native Documentation</li>
+      <li>"The Pros and Cons of Hybrid Mobile Apps" by Jon Arnold, Business.com</li>
+      <li>"PhoneGap vs React Native vs Flutter" by Vladislav Kovalyov, Altar.io</li>
+    </ul>
+  </footer>
+</body>
+</html>
