@@ -1,27 +1,41 @@
-const CACHE_NAME = 'short-task';
-
-const urlsToCache = [
-  '/index.html',
-  '/style.css'
+var CACHE_VERSION = 'short-task';
+var CACHE_FILES = [
+    '/index.html',
+    '/style.css'
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        return cache.addAll(urlsToCache);
-      })
-  );
+    console.log('SW installed');
+    event.waitUntil(
+        caches
+        .open(CACHE_VERSION)
+        .then(cache => {
+            console.log('SW caching files');
+            cache.addAll(CACHE_FILES)
+        })
+        .then(() => self.skipWaiting())
+    );
+});
+
+self.addEventListener('activate', event => {
+    console.log('SW activated');
+    event.waitUntil(
+        caches.keys().then(keyNames => {
+            return Promise.all(
+                keyNames.map(key => {
+                    if(key !== CACHE_VERSION) {
+                        console.log('SW clearing old caches');
+                        return caches.delete(key);
+                    }
+                })
+            );
+        })
+    );
 });
 
 self.addEventListener('fetch', event => {
-  event.respondWith(
-    caches.match(event.request)
-      .then(response => {
-        if (response) {
-          return response;
-        }
-        return fetch(event.request);
-      })
-  );
+    console.log('SW fetching');
+    event.respondWith(
+        fetch(event.request).catch(() => caches.match(event.request))
+    );
 });
