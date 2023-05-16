@@ -11,7 +11,7 @@
     <script>
         if ('serviceWorker' in navigator) {
           window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js')
+            navigator.serviceWorker.register('/service-worker.js')
               .then(registration => {
                 console.log('Service worker registered:', registration);
               })
@@ -22,11 +22,17 @@
         }
       </script>
       
-    <h1>Hybrid Framework Comparison</h1>
+    <h1>Short Task - Hybrid Solutions</h1>
   </header>
   <main>
     <section id="phonegap">
-      <h2>PhoneGap (or PhoneGap Build or Cordova)</h2>
+      <h2>PhoneGap</h2>
+      <p>Overview:</p>
+      <p>
+        PhoneGap is a framework that helps developers create mobile apps using web technologies like HTML, CSS, and JavaScript. 
+        It allows you to build apps for different platforms (iOS, Android, etc.) using a single codebase, saving time and effort. 
+        PhoneGap apps are packaged like native apps and can access device features like the camera or location using JavaScript.
+      </p>
       <p>Advantages:</p>
       <ul>
         <li>Easy to learn and use for web developers</li>
@@ -43,6 +49,13 @@
     </section>
     <section id="flutter">
       <h2>Flutter</h2>
+      <p>Overview:</p>
+      <p>
+        Flutter is a framework developed by Google for creating mobile, web, and desktop apps using a single codebase. 
+        It allows you to build visually attractive and fast applications with reusable components. 
+        Flutter apps work on different platforms and have a consistent look and feel. 
+        With Flutter, you can see changes to your code instantly without restarting the app, making development faster and easier.
+      </p>
       <p>Advantages:</p>
       <ul>
         <li>Fast development cycles</li>
@@ -60,6 +73,13 @@
     </section>
     <section id="react-native">
       <h2>React Native</h2>
+      <p>Overview:</p>
+      <p>
+        React Native is a framework created by Meta for building mobile apps using JavaScript. 
+        It allows developers to create apps for both iOS and Android platforms using the same codebase. 
+        React Native uses reusable components and provides access to device features. 
+        It lets you write code once and use it across different platforms, saving time and effort.
+      </p>
       <p>Advantages:</p>
       <ul>
         <li>Large and active community support</li>
@@ -74,16 +94,18 @@
         <li>Debugging can be challenging</li>
       </ul>
     </section>
+    <section>
+      <h3>References:</h3>
+      <ul>
+        <a href="https://forgeahead.io/blog/react-native-vs-ionic-vs-flutter-vs-phonegap-make-the-right-choice-for-2021/" target="_blank" rel="noopener noreferrer">React Native Vs. Ionic Vs. Flutter Vs. PhoneGap </a><br>
+        <a href="https://apiko.com/blog/native-mobile-app-development-react-native-vs-flutter-vs-cordova/" target="_blank" rel="noopener noreferrer">React Native vs Flutter vs Cordova</a><br>
+        <a href="https://www.interviewbit.com/blog/flutter-vs-react-native/" target="_blank" rel="noopener noreferrer">Flutter vs React Native: Difference and Comparison [2023]</a><br>
+        <a href="https://cordova.apache.org/docs/en/11.x/guide/overview/index.html" target="_blank" rel="noopener noreferrer">Cordova Documentation</a><br>
+        <a href="https://api.flutter.dev/" target="_blank" rel="noopener noreferrer">Flutter Documentation</a><br>
+        <a href="https://reactnative.dev/docs/intro-react-native-components" target="_blank" rel="noopener noreferrer">React Native Documentation</a><br>
+    </section>
   </main>
   <footer>
-    <p>References:</p>
-    <ul>
-      <li>PhoneGap Documentation</li>
-      <li>Flutter Documentation</li>
-      <li>React Native Documentation</li>
-      <li>"The Pros and Cons of Hybrid Mobile Apps" by Jon Arnold, Business.com</li>
-      <li>"PhoneGap vs React Native vs Flutter" by Vladislav Kovalyov, Altar.io</li>
-    </ul>
   </footer>
 </body>
 </html>

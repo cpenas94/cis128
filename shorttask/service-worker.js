@@ -1,10 +1,8 @@
-const CACHE_NAME = 'my-cache';
+const CACHE_NAME = 'short-task';
 
 const urlsToCache = [
-  '/',
   '/index.html',
-  '/style.css',
-  '/script.js'
+  '/style.css'
 ];
 
 self.addEventListener('install', event => {
